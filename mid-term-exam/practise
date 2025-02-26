@@ -5,6 +5,9 @@ def reverse_string():
     reversed_string = string[::-1]
     print(reversed_string)
 
+if __name__ == "__main__":
+    reverse_string()
+
     #Question 3: Count vowels
 
 def count_vowels (sentence):
