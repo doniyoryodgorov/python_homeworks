@@ -1,0 +1,28 @@
+#Question 1: Reverse String
+
+def reverse_string():
+    string = input("write a string: ")
+    reversed_string = string[::-1]
+    print(reversed_string)
+
+    #Question 3: Count vowels
+
+def count_vowels (sentence):
+    wowels = "aeiouAEIOU"
+    count = 0
+    for x in sentence:
+        if x in wowels:
+            count += 1
+    return count
+
+
+    #Question 4: Prime Number Generator
+def prime_number(n):
+    prime_numbers = []
+    for a in range(2, n+1):
+        for b in range(2, a):
+            if a % b == 0:
+                break
+        else:
+            prime_numbers.append(a)
+    return prime_numbers
