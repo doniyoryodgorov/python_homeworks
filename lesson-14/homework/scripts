@@ -1,0 +1,13 @@
+import json
+
+
+with open('students.json', 'r') as file:
+    students_data = json.load(file)
+
+
+for student in students_data:
+    print(f"Student ID: {student.get('id')}")
+    print(f"Name: {student.get('name')}")
+    print(f"Age: {student.get('age')}")
+    print(f"Grade: {student.get('grade')}")
+    print(f"Subjects: {', '.join(student.get('subjects', []))}")
