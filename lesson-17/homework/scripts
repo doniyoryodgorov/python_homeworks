@@ -1,3 +1,4 @@
+Homework 1
 import pandas as pd
 
 # Step 1: Create the DataFrame
@@ -23,4 +24,18 @@ print("\nMean Age of Individuals:", mean_age)
 # Step 5: Select and print only the 'first_name' and 'City' columns
 print("\nSelected Columns (first_name and City):")
 print(df[['first_name', 'City']])
+
+#Step 6 
+import numpy as np
+
+np.random.seed(42)  # For reproducibility
+df['Salary'] = np.random.randint(50000, 100000, size=len(df))
+
+#Step 7
+
+print(df.describe())
+
+Homework 2:
+
+
 
