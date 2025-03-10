@@ -63,6 +63,38 @@ average_expenses=sales_expenses['Expenses'].mean()
 print(average_sales)
 print(average_expenses)
 
+Homework 3:
+
+#1
+import pandas as pd
+
+Category=['Rent','Utilities','Groceries','Entertainment']
+January=[1200,200,300,150]
+February=[1300,220,320,160]
+March=[1400,240,330,170]
+April=[1500,250,350,180]
+
+Expenses=pd.DataFrame({'Category':Category,'January':January,'February':February,'March':March,'April':April})
+Expenses
+
+expenses = Expenses.set_index('Category')
+
+#2 Calculate and display the maximum expense for each category.
+max_expenses=Expenses[['January','February','March','April']].max(axis=1)
+Expenses['Max Expenses']=max_expenses    
+print(max_expenses)
+
+#3 calculate and display the minimum expense for each category.
+min_expenses=Expenses[['January','February','March','April']].min(axis=1)
+Expenses['Min Expenses']=min_expenses
+print(min_expenses)   
+
+#4 Calculate and display the average expense for each category.
+average_expenses=Expenses[['January','February','March','April']].mean(axis=1)
+Expenses['Average Expenses']=average_expenses
+print(average_expenses)   
+
+
 
 
 
