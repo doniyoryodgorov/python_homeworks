@@ -36,6 +36,33 @@ df['Salary'] = np.random.randint(50000, 100000, size=len(df))
 print(df.describe())
 
 Homework 2:
+#1
+Month=['Jan','Feb','Mar','Apr']
+Sales=[5000,6000,7500,8000]
+Expenses=[3000,3500,4000,4500]
+
+sales_expenses=pd.DataFrame({'Month':Month,'Sales':Sales,'Expenses':Expenses})
+sales_expenses
+#2
+#Calculate and display the maximum sales and expenses.
+max_sales=sales_expenses['Sales'].max()
+max_expenses=sales_expenses['Expenses'].max()
+print(max_sales)
+print(max_expenses)
+
+#3
+#Calculate and display the minimum sales and expenses.
+min_sales=sales_expenses['Sales'].min()
+min_expenses=sales_expenses['Expenses'].min()
+print(min_sales)
+print(min_expenses)
+#4
+#Calculate and display the average sales and expenses.
+average_sales=sales_expenses['Sales'].mean()
+average_expenses=sales_expenses['Expenses'].mean()
+print(average_sales)
+print(average_expenses)
+
 
 
 
